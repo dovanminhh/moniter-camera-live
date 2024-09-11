@@ -1,9 +1,12 @@
 body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   background: linear-gradient(to bottom, #0e2e6f, #041435);
+  font-family: "Montserrat", sans-serif;
   min-height: 100vh;
+  min-width: 1000px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 .list-dot {
   height: 20px;
@@ -27,17 +30,17 @@ body {
   right: 0;
   padding: 5px 20px 5px 0px;
 }
-
-
 .main-top-header .title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 22px;
+  /* background-color: red; */
 }
 .img-icon-camera {
   width: 35px;
   height: 35px;
 }
+
 .time .time-text {
   font-size: 15px;
   line-height: 16px;
@@ -46,7 +49,6 @@ body {
 .time-icon i {
   font-size: 18px;
 }
-
 
 .parallelogram {
   position: absolute;
@@ -222,7 +224,7 @@ body {
 }
 
 .bg-img-list {
-  background-image: url('../assets/images/Mask group.png');
+  background-image: url("../assets/images/Mask group.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 80px;
@@ -230,11 +232,10 @@ body {
   border-radius: 10px;
   background-color: #0e2e6e;
   object-fit: fill;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 
 .violation-item-end {
-  width: 70%;
   margin-left: 10px;
 }
 .violation-item-end > div {
@@ -272,7 +273,6 @@ body {
 }
 .custom-chose {
   position: relative;
-  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -288,7 +288,7 @@ body {
 }
 .chose-text img {
   max-width: 100%;
-  width: 40px;
+  width: 45px;
   height: 10px;
 }
 .chose-text span {
@@ -329,6 +329,7 @@ body {
 .main-bottom {
   margin-top: 20px;
 }
+
 .infor-law-text {
   background: linear-gradient(to right, #f2c94c, #f2994a);
   -webkit-text-fill-color: transparent;
@@ -339,17 +340,7 @@ body {
   padding-left: 12px;
   line-height: 25px;
 }
-.phone-number {
-  background: linear-gradient(to right, #f2c94c, #f2994a);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-size: 28px;
-  font-weight: bold;
-  text-align: center;
-}
-.email-address {
-  color: #56ccf2;
-}
+
 .infor-vehicle {
   position: relative;
 }
@@ -385,26 +376,24 @@ body {
   width: 100%;
   line-height: 20px;
 }
-
-.animate-round-dot {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 8px 0px;
-}
-
-.animate-round-dot img {
-  height: 15px;
-}
-.animate-round-dot1 img {
-  height: 15px;
-}
 .infor-vehicle-text-number {
   font-size: 26px;
   font-weight: bold;
 }
 .infor-vehicle-text-text {
   font-size: 16px;
+}
+
+.phone-number {
+  background: linear-gradient(to right, #f2c94c, #f2994a);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+.email-address {
+  color: #56ccf2;
 }
 .icon-phone {
   width: 30px;
@@ -422,7 +411,11 @@ body {
   line-height: 18px;
 }
 .image-qr {
-  display: inline-block;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .image-qr img {
   max-width: 100%;
@@ -434,6 +427,24 @@ body {
   width: 70px;
   margin-right: 10px;
 }
+
+.animate-round-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0px;
+}
+
+.animate-round-dot img {
+  height: 15px;
+}
+.animate-round-dot1 {
+  margin-top: 8px;
+}
+.animate-round-dot1 img {
+  height: 15px;
+}
+
 .dots-container {
   display: flex;
   justify-content: space-around;
@@ -449,9 +460,11 @@ body {
   border-radius: 40%;
   animation: pulse 1.5s infinite alternate;
 }
-
+.carousel-indicators {
+  margin-bottom: 0px !important;
+}
 .carousel-inner {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .carousel-indicators [data-bs-target] {
   width: 10px;
@@ -486,9 +499,36 @@ body {
 
 /* laptop/desktop */
 @media (min-width: 992px) and (max-width: 1235px) {
-  .Logo-csgt h3 {
-    font-size: 19px;
+  .animate-round-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0px;
   }
+
+  .animate-round-dot img {
+    height: 13px;
+  }
+  .animate-round-dot1 img {
+    height: 13px;
+  }
+  .Logo-csgt {
+    width: 100%;
+  }
+  .Logo-csgt .img-logo {
+    margin-right: 4px;
+  }
+  .Logo-csgt img {
+    width: 73px;
+    height: 85px;
+    object-fit: fill;
+  }
+  .Logo-csgt h3 {
+    font-size: 18px;
+    padding-bottom: 5px;
+    line-height: 19px;
+  }
+
   .main-top .main-top-header {
     width: 71%;
     top: 3px;
@@ -501,27 +541,64 @@ body {
     height: 32px;
   }
   .main-top-header .title {
-    font-size: 18px;
+    font-size: 17px;
   }
   .time .time-text {
-    font-size: 14px;
+    font-size: 13px;
   }
+  .violation-list .violation-item {
+    /* display: flex;
+    align-items: center; */
+  }
+
   .violation-list .violation-item {
     display: flex;
     align-items: center;
   }
+  .bg-img-list {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: #0e2e6e;
+  }
+  .violation-item-end {
+    margin-left: 10px;
+  }
+
   .violation-item .violation-item-end > div h5 {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 17px;
   }
   .violation-item .violation-item-end > div p {
     font-size: 14px;
     line-height: 17px;
   }
   .violation-item .violation-item-end p {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 17px;
   }
+  .custom-chose img {
+    max-width: 100%;
+    height: 35px;
+  }
+  .chose-text {
+    position: absolute;
+    line-height: 15px;
+    padding-bottom: 5px;
+  }
+  .chose-text img {
+    max-width: 100%;
+    width: 32px;
+    height: 8px;
+  }
+  .chose-text span {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
   .infor-law-text {
     background: linear-gradient(to right, #f2c94c, #f2994a);
     -webkit-text-fill-color: transparent;
@@ -532,11 +609,132 @@ body {
     padding-left: 12px;
     line-height: 25px;
   }
+
+  .infor-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-vehicle img {
+    max-width: 100%;
+  }
+  .infor-vehicle-text {
+    line-height: 16px;
+  }
+  .infor-vehicle-text-number {
+    font-size: 24px;
+  }
+  .infor-vehicle-text-text {
+    font-size: 14px;
+  }
+  .img-vehicleviolation {
+    display: inline-block;
+    position: relative;
+  }
+  .img-vehicleviolation .triangle {
+    position: absolute;
+    right: 0;
+    top: 1px;
+  }
+  .img-vehicleviolation .triangle img {
+    max-width: 100%;
+    height: 16px;
+    width: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 0px;
+    line-height: 19px;
+  }
+  .carousel-indicators [data-bs-target] {
+    margin: 0px 4px;
+    width: 7px;
+    height: 7px;
+  }
+  .phone-number {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .email-address {
+    color: #56ccf2;
+  }
+  .icon-phone {
+    width: 26px;
+    height: 26px;
+    border-radius: 50px;
+    background: linear-gradient(#f2994a, #f2c94c);
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-phone i {
+    font-size: 13px;
+    color: #ffffff;
+  }
+  .contact-text {
+    padding-right: 5px;
+  }
+  .contact-text p {
+    font-size: 16px;
+    line-height: 17px;
+  }
+  .image-qr {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-qr img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1175px) {
+  .animate-round-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0px;
+  }
+
+  .animate-round-dot img {
+    height: 13px;
+  }
+  .animate-round-dot1 img {
+    height: 13px;
+  }
+  .Logo-csgt {
+    width: 100%;
+  }
+  .Logo-csgt .img-logo {
+    margin-right: 3px;
+  }
+  .Logo-csgt img {
+    width: 75px;
+    height: 87px;
+    object-fit: fill;
+  }
   .Logo-csgt h3 {
-    font-size: 18px;
+    font-size: 17px;
+    padding-bottom: 5px;
+    line-height: 18px;
   }
   .violation-block {
     height: 99%;
@@ -555,7 +753,6 @@ body {
     background-color: #0e2e6e;
   }
   .violation-item-end {
-    width: 70%;
     margin-left: 10px;
   }
   .violation-item .violation-item-end > div h5 {
@@ -617,7 +814,7 @@ body {
     justify-content: center;
   }
   .main-top-header .title {
-    font-size: 17px;
+    font-size: 16px;
   }
   .infor-law-text {
     background: linear-gradient(to right, #f2c94c, #f2994a);
@@ -629,12 +826,152 @@ body {
     padding-left: 12px;
     line-height: 25px;
   }
+  .time .time-text {
+    font-size: 13px;
+  }
+
+  .infor-vehicle {
+    position: relative;
+  }
+  .infor-vehicle img {
+    max-width: 100%;
+    position: relative;
+  }
+
+  .infor-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-vehicle img {
+    max-width: 100%;
+  }
+  .infor-vehicle-text {
+    line-height: 15px;
+  }
+  .infor-vehicle-text-number {
+    font-size: 22px;
+  }
+  .infor-vehicle-text-text {
+    font-size: 12px;
+  }
+  .img-vehicleviolation {
+    display: inline-block;
+    position: relative;
+  }
+  .img-vehicleviolation .triangle {
+    position: absolute;
+    right: 0;
+    top: 1px;
+  }
+  .img-vehicleviolation .triangle img {
+    max-width: 100%;
+    height: 16px;
+    width: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 12px;
+    line-height: 18px;
+  }
+  .carousel-indicators [data-bs-target] {
+    margin: 0px 3px;
+    width: 6px;
+    height: 6px;
+  }
+  .phone-number {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .email-address {
+    color: #56ccf2;
+  }
+  .icon-phone {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background: linear-gradient(#f2994a, #f2c94c);
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-phone i {
+    font-size: 12px;
+    color: #ffffff;
+  }
+  .contact-text {
+    padding-right: 5px;
+  }
+  .contact-text p {
+    font-size: 15px;
+    line-height: 16px;
+  }
+  .image-qr {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-qr img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1052px) {
+  .animate-round-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0px;
+  }
+
+  .animate-round-dot img {
+    height: 13px;
+  }
+  .animate-round-dot1 img {
+    height: 13px;
+  }
+  .Logo-csgt {
+    width: 100%;
+  }
+  .Logo-csgt .img-logo {
+    margin-right: 3px;
+  }
+  .Logo-csgt img {
+    width: 75px;
+    height: 87px;
+    object-fit: fill;
+  }
   .Logo-csgt h3 {
     font-size: 16px;
+    padding-bottom: 2px;
+    line-height: 17px;
   }
+  .main-top-header .title {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .time .time-text {
+    font-size: 12px;
+  }
+
   .violation-block {
     height: 96%;
   }
@@ -676,6 +1013,23 @@ body {
     font-size: 12px;
   }
 
+  .infor-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-vehicle img {
+    max-width: 100%;
+  }
+  .infor-vehicle-text {
+    line-height: 15px;
+  }
+  .infor-vehicle-text-number {
+    font-size: 22px;
+  }
+  .infor-vehicle-text-text {
+    font-size: 12px;
+  }
   .img-vehicleviolation {
     display: inline-block;
     position: relative;
@@ -697,11 +1051,61 @@ body {
     background: linear-gradient(to right, #f2c94c, #f2994a);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
     padding-left: 12px;
-    line-height: 25px;
+    line-height: 18px;
+  }
+  .carousel-indicators [data-bs-target] {
+    margin: 0px 3px;
+    width: 6px;
+    height: 6px;
+  }
+  .phone-number {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .email-address {
+    color: #56ccf2;
+  }
+  .icon-phone {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background: linear-gradient(#f2994a, #f2c94c);
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-phone i {
+    font-size: 12px;
+    color: #ffffff;
+  }
+  .contact-text {
+    padding-right: 5px;
+  }
+  .contact-text p {
+    font-size: 15px;
+    line-height: 16px;
+  }
+  .image-qr {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-qr img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
   }
 }
 /* tablet */
@@ -821,5 +1225,1371 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+/* laptop/desktop */
+@media (min-width: 1235px) and (max-width: 1279px) {
+  .animate-round-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0px;
+  }
+
+  .animate-round-dot img {
+    height: 13px;
+  }
+  .animate-round-dot1 img {
+    height: 13px;
+  }
+  .Logo-csgt {
+    width: 100%;
+  }
+  .Logo-csgt .img-logo {
+    margin-right: 4px;
+  }
+  .Logo-csgt img {
+    width: 73px;
+    height: 85px;
+    object-fit: fill;
+  }
+  .Logo-csgt h3 {
+    font-size: 18px;
+    padding-bottom: 5px;
+    line-height: 19px;
+  }
+
+  .main-top .main-top-header {
+    width: 71%;
+    top: 3px;
+    right: 0;
+    padding: 6px 20px 6px 0px;
+  }
+
+  .main-top-header .img-icon-camera {
+    width: 32px;
+    height: 32px;
+  }
+  .main-top-header .title {
+    font-size: 17px;
+  }
+  .time .time-text {
+    font-size: 13px;
+  }
+  .violation-list .violation-item {
+    /* display: flex;
+    align-items: center; */
+  }
+
+  .violation-list .violation-item {
+    display: flex;
+    align-items: center;
+  }
+  .bg-img-list {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: #0e2e6e;
+  }
+  .violation-item-end {
+    margin-left: 10px;
+  }
+
+  .violation-item .violation-item-end > div h5 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .violation-item .violation-item-end > div p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .violation-item .violation-item-end p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .custom-chose img {
+    max-width: 100%;
+    height: 35px;
+  }
+  .chose-text {
+    position: absolute;
+    line-height: 15px;
+    padding-bottom: 5px;
+  }
+  .chose-text img {
+    max-width: 100%;
+    width: 32px;
+    height: 8px;
+  }
+  .chose-text span {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 12px;
+    line-height: 25px;
+  }
+
+  .infor-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-vehicle img {
+    max-width: 100%;
+  }
+  .infor-vehicle-text {
+    line-height: 16px;
+  }
+  .infor-vehicle-text-number {
+    font-size: 24px;
+  }
+  .infor-vehicle-text-text {
+    font-size: 14px;
+  }
+  .img-vehicleviolation {
+    display: inline-block;
+    position: relative;
+  }
+  .img-vehicleviolation .triangle {
+    position: absolute;
+    right: 0;
+    top: 1px;
+  }
+  .img-vehicleviolation .triangle img {
+    max-width: 100%;
+    height: 16px;
+    width: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 0px;
+    line-height: 19px;
+  }
+  .carousel-indicators [data-bs-target] {
+    margin: 0px 4px;
+    width: 7px;
+    height: 7px;
+  }
+  .phone-number {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .email-address {
+    color: #56ccf2;
+  }
+  .icon-phone {
+    width: 26px;
+    height: 26px;
+    border-radius: 50px;
+    background: linear-gradient(#f2994a, #f2c94c);
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-phone i {
+    font-size: 13px;
+    color: #ffffff;
+  }
+  .contact-text {
+    padding-right: 5px;
+  }
+  .contact-text p {
+    font-size: 16px;
+    line-height: 17px;
+  }
+  .image-qr {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-qr img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1400px) {
+  .animate-round-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9px 0px;
+  }
+
+  .animate-round-dot img {
+    height: 14px;
+  }
+  .animate-round-dot1 img {
+    height: 14px;
+  }
+  .Logo-csgt {
+    width: 100%;
+  }
+  .Logo-csgt .img-logo {
+    margin-right: 4px;
+  }
+  .Logo-csgt img {
+    width: 75px;
+    height: 87px;
+    object-fit: fill;
+  }
+  .Logo-csgt h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    line-height: 22px;
+  }
+
+  .main-top .main-top-header {
+    width: 71%;
+    top: 3px;
+    right: 0;
+    padding: 6px 20px 6px 0px;
+  }
+
+  .main-top-header .img-icon-camera {
+    width: 32px;
+    height: 32px;
+  }
+  .main-top-header .title {
+    font-size: 18px;
+  }
+  .time .time-text {
+    font-size: 14px;
+  }
+  .violation-list .violation-item {
+    /* display: flex;
+    align-items: center; */
+  }
+
+  .violation-list .violation-item {
+    display: flex;
+    align-items: center;
+  }
+  .bg-img-list {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #0e2e6e;
+  }
+  .violation-item-end {
+    margin-left: 10px;
+  }
+
+  .violation-item .violation-item-end > div h5 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .violation-item .violation-item-end > div p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .violation-item .violation-item-end p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .custom-chose img {
+    max-width: 100%;
+    height: 35px;
+  }
+  .chose-text {
+    position: absolute;
+    line-height: 15px;
+    padding-bottom: 5px;
+  }
+  .chose-text img {
+    max-width: 100%;
+    width: 32px;
+    height: 8px;
+  }
+  .chose-text span {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 12px;
+    line-height: 25px;
+  }
+
+  .infor-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-vehicle img {
+    max-width: 100%;
+  }
+  .infor-vehicle-text {
+    line-height: 17px;
+  }
+  .infor-vehicle-text-number {
+    font-size: 25px;
+  }
+  .infor-vehicle-text-text {
+    font-size: 15px;
+  }
+  .img-vehicleviolation {
+    display: inline-block;
+    position: relative;
+  }
+  .img-vehicleviolation .triangle {
+    position: absolute;
+    right: 0;
+    top: 1px;
+  }
+  .img-vehicleviolation .triangle img {
+    max-width: 100%;
+    height: 21px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 0px;
+    line-height: 20px;
+  }
+  .carousel-indicators [data-bs-target] {
+    margin: 0px 4px;
+    width: 8px;
+    height: 8px;
+  }
+  .phone-number {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .email-address {
+    color: #56ccf2;
+  }
+  .icon-phone {
+    width: 27px;
+    height: 27px;
+    border-radius: 50px;
+    background: linear-gradient(#f2994a, #f2c94c);
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-phone i {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .contact-text {
+    padding-right: 5px;
+  }
+  .contact-text p {
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .image-qr {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-qr img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  .col-end {
+    width: 30%;
+    height: 80%;
+    /* background-color: gray; */
+    position: absolute;
+    right: 0;
+    top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1550px) {
+  .animate-round-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9px 0px;
+  }
+
+  .animate-round-dot img {
+    height: 14px;
+  }
+  .animate-round-dot1 img {
+    height: 14px;
+  }
+  .Logo-csgt {
+    width: 100%;
+  }
+  .Logo-csgt .img-logo {
+    margin-right: 4px;
+  }
+  .Logo-csgt img {
+    width: 75px;
+    height: 87px;
+    object-fit: fill;
+  }
+  .Logo-csgt h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    line-height: 22px;
+  }
+
+  .main-top .main-top-header {
+    width: 71%;
+    top: 3px;
+    right: 0;
+    padding: 6px 20px 6px 0px;
+  }
+
+  .main-top-header .img-icon-camera {
+    width: 32px;
+    height: 32px;
+  }
+  .main-top-header .title {
+    font-size: 18px;
+  }
+  .time .time-text {
+    font-size: 14px;
+  }
+  .violation-list .violation-item {
+    /* display: flex;
+    align-items: center; */
+  }
+
+  .violation-list .violation-item {
+    display: flex;
+    align-items: center;
+  }
+  .bg-img-list {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #0e2e6e;
+  }
+  .violation-item-end {
+    margin-left: 10px;
+  }
+
+  .violation-item .violation-item-end > div h5 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .violation-item .violation-item-end > div p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .violation-item .violation-item-end p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .custom-chose img {
+    max-width: 100%;
+    height: 35px;
+  }
+  .chose-text {
+    position: absolute;
+    line-height: 15px;
+    padding-bottom: 5px;
+  }
+  .chose-text img {
+    max-width: 100%;
+    width: 32px;
+    height: 8px;
+  }
+  .chose-text span {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 12px;
+    line-height: 25px;
+  }
+
+  .infor-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-vehicle img {
+    max-width: 100%;
+  }
+  .infor-vehicle-text {
+    line-height: 17px;
+  }
+  .infor-vehicle-text-number {
+    font-size: 25px;
+  }
+  .infor-vehicle-text-text {
+    font-size: 15px;
+  }
+  .img-vehicleviolation {
+    display: inline-block;
+    position: relative;
+  }
+  .img-vehicleviolation .triangle {
+    position: absolute;
+    right: 0;
+    top: 1px;
+  }
+  .img-vehicleviolation .triangle img {
+    max-width: 100%;
+    height: 21px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 0px;
+    line-height: 20px;
+  }
+  .carousel-indicators [data-bs-target] {
+    margin: 0px 4px;
+    width: 8px;
+    height: 8px;
+  }
+  .phone-number {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .email-address {
+    color: #56ccf2;
+  }
+  .icon-phone {
+    width: 27px;
+    height: 27px;
+    border-radius: 50px;
+    background: linear-gradient(#f2994a, #f2c94c);
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-phone i {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .contact-text {
+    padding-right: 5px;
+  }
+  .contact-text p {
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .image-qr {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-qr img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  .col-end {
+    width: 30%;
+    height: 82%;
+    /* background-color: gray; */
+    position: absolute;
+    right: 0;
+    top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1550px) and (max-width: 1700px) {
+  .animate-round-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9px 0px;
+  }
+
+  .animate-round-dot img {
+    height: 15px;
+  }
+  .animate-round-dot1 img {
+    height: 15px;
+  }
+  .Logo-csgt {
+    width: 100%;
+  }
+  .Logo-csgt .img-logo {
+    margin-right: 6px;
+  }
+  .Logo-csgt img {
+    width: 80px;
+    height: 92px;
+    object-fit: fill;
+  }
+  .Logo-csgt h3 {
+    font-size: 22px;
+    padding-bottom: 12px;
+    line-height: 24px;
+  }
+
+  .main-top .main-top-header {
+    width: 71%;
+    top: 3px;
+    right: 0;
+    padding: 6px 24px 6px 0px;
+  }
+
+  .main-top-header .img-icon-camera {
+    width: 32px;
+    height: 32px;
+  }
+  .main-top-header .title {
+    font-size: 19px;
+  }
+  .time .time-text {
+    font-size: 15px;
+  }
+  .violation-list .violation-item {
+    /* display: flex;
+    align-items: center; */
+  }
+
+  .violation-list .violation-item {
+    display: flex;
+    align-items: center;
+  }
+  .bg-img-list {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #0e2e6e;
+  }
+  .violation-item-end {
+    margin-left: 10px;
+  }
+
+  .violation-item .violation-item-end > div h5 {
+    font-size: 17px;
+    line-height: 19px;
+  }
+  .violation-item .violation-item-end > div p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .violation-item .violation-item-end p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+
+  .description-list-violation {
+    position: absolute;
+    right: 0;
+    bottom: 39px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  .custom-chose {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
+
+  .custom-chose img {
+    max-width: 100%;
+    height: 42px;
+  }
+  .chose-text {
+    position: absolute;
+    line-height: 15px;
+    padding-bottom: 5px;
+  }
+  .chose-text img {
+    max-width: 100%;
+    width: 35px;
+    height: 8px;
+  }
+  .chose-text span {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 12px;
+    line-height: 25px;
+  }
+
+  .infor-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-vehicle img {
+    max-width: 100%;
+  }
+  .infor-vehicle-text {
+    line-height: 19px;
+  }
+  .infor-vehicle-text-number {
+    font-size: 27px;
+  }
+  .infor-vehicle-text-text {
+    font-size: 18px;
+  }
+  .img-vehicleviolation {
+    display: inline-block;
+    position: relative;
+  }
+  .img-vehicleviolation .triangle {
+    position: absolute;
+    right: 0;
+    top: 1px;
+  }
+  .img-vehicleviolation .triangle img {
+    max-width: 100%;
+    height: 25px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 0px;
+    line-height: 24px;
+  }
+  .carousel-indicators [data-bs-target] {
+    margin: 0px 5px;
+    width: 10px;
+    height: 10px;
+  }
+  .phone-number {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .email-address {
+    color: #56ccf2;
+  }
+  .icon-phone {
+    width: 29px;
+    height: 29px;
+    border-radius: 50px;
+    background: linear-gradient(#f2994a, #f2c94c);
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-phone i {
+    font-size: 15px;
+    color: #ffffff;
+  }
+  .contact-text {
+    padding-right: 5px;
+  }
+  .contact-text p {
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .image-qr {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-qr img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  .col-end {
+    width: 30%;
+    height: 83%;
+    /* background-color: gray; */
+    position: absolute;
+    right: 0;
+    top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .violation-block {
+    padding-bottom: 36px;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 1850px) {
+  .animate-round-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9px 0px;
+  }
+
+  .animate-round-dot img {
+    height: 15px;
+  }
+  .animate-round-dot1 img {
+    height: 15px;
+  }
+  .Logo-csgt {
+    width: 100%;
+  }
+  .Logo-csgt .img-logo {
+    margin-right: 6px;
+  }
+  .Logo-csgt img {
+    width: 80px;
+    height: 92px;
+    object-fit: fill;
+  }
+  .Logo-csgt h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    line-height: 26px;
+    /* background-color: red; */
+  }
+
+  .main-top .main-top-header {
+    width: 71%;
+    top: 3px;
+    right: 0;
+    padding: 6px 27px 6px 0px;
+  }
+
+  .main-top-header .img-icon-camera {
+    width: 32px;
+    height: 32px;
+  }
+  .main-top-header .title {
+    font-size: 21px;
+  }
+  .time .time-text {
+    font-size: 17px;
+  }
+  .violation-list .violation-item {
+    /* display: flex;
+    align-items: center; */
+  }
+
+  .violation-list .violation-item {
+    display: flex;
+    align-items: center;
+  }
+  .bg-img-list {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #0e2e6e;
+  }
+  .violation-item-end {
+    margin-left: 10px;
+  }
+
+  .violation-item .violation-item-end > div h5 {
+    font-size: 19px;
+    line-height: 21px;
+  }
+  .violation-item .violation-item-end > div p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .violation-item .violation-item-end p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+
+  .description-list-violation {
+    position: absolute;
+    right: 0;
+    bottom: 39px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  .custom-chose {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
+
+  .custom-chose img {
+    max-width: 100%;
+    height: 42px;
+  }
+  .chose-text {
+    position: absolute;
+    line-height: 17px;
+    padding-bottom: 5px;
+  }
+  .chose-text img {
+    max-width: 100%;
+    width: 35px;
+    height: 8px;
+  }
+  .chose-text span {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 12px;
+    line-height: 25px;
+  }
+
+  .infor-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-vehicle img {
+    max-width: 100%;
+  }
+  .infor-vehicle-text {
+    line-height: 21px;
+  }
+  .infor-vehicle-text-number {
+    font-size: 29px;
+  }
+  .infor-vehicle-text-text {
+    font-size: 20px;
+  }
+  .img-vehicleviolation {
+    display: inline-block;
+    position: relative;
+  }
+  .img-vehicleviolation .triangle {
+    position: absolute;
+    right: 0;
+    top: 1px;
+  }
+  .img-vehicleviolation .triangle img {
+    max-width: 100%;
+    height: 26px;
+    width: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 0px;
+    line-height: 26px;
+  }
+  .carousel-indicators [data-bs-target] {
+    margin: 0px 5px;
+    width: 10px;
+    height: 10px;
+  }
+  .phone-number {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .email-address {
+    color: #56ccf2;
+  }
+  .icon-phone {
+    width: 29px;
+    height: 29px;
+    border-radius: 50px;
+    background: linear-gradient(#f2994a, #f2c94c);
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-phone i {
+    font-size: 15px;
+    color: #ffffff;
+  }
+  .contact-text {
+    padding-right: 5px;
+  }
+  .contact-text p {
+    font-size: 21px;
+    line-height: 22px;
+  }
+  .image-qr {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-qr img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  .col-end {
+    width: 30%;
+    height: 85%;
+    /* background-color: gray; */
+    position: absolute;
+    right: 0;
+    top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .violation-block {
+    padding-bottom: 35px;
+  }
+}
+
+@media (min-width: 1850px) {
+  .animate-round-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9px 0px;
+  }
+
+  .animate-round-dot img {
+    height: 15px;
+  }
+  .animate-round-dot1 img {
+    height: 15px;
+  }
+  .Logo-csgt {
+    width: 100%;
+  }
+  .Logo-csgt .img-logo {
+    margin-right: 6px;
+  }
+  .Logo-csgt img {
+    width: 80px;
+    height: 92px;
+    object-fit: fill;
+  }
+  .Logo-csgt h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    line-height: 26px;
+    /* background-color: red; */
+  }
+
+  .main-top .main-top-header {
+    width: 71%;
+    top: 3px;
+    right: 0;
+    padding: 6px 29px 6px 0px;
+  }
+
+  .main-top-header .img-icon-camera {
+    width: 32px;
+    height: 32px;
+  }
+  .main-top-header .title {
+    font-size: 21px;
+  }
+  .time .time-text {
+    font-size: 17px;
+  }
+  .violation-list .violation-item {
+    /* display: flex;
+    align-items: center; */
+  }
+
+  .violation-list .violation-item {
+    display: flex;
+    align-items: center;
+  }
+  .bg-img-list {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #0e2e6e;
+  }
+  .violation-item-end {
+    margin-left: 10px;
+  }
+
+  .violation-item .violation-item-end > div h5 {
+    font-size: 19px;
+    line-height: 21px;
+  }
+  .violation-item .violation-item-end > div p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .violation-item .violation-item-end p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+
+  .description-list-violation {
+    position: absolute;
+    right: 0;
+    bottom: 39px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  .custom-chose {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
+
+  .custom-chose img {
+    max-width: 100%;
+    height: 42px;
+  }
+  .chose-text {
+    position: absolute;
+    line-height: 17px;
+    padding-bottom: 5px;
+  }
+  .chose-text img {
+    max-width: 100%;
+    width: 35px;
+    height: 8px;
+  }
+  .chose-text span {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 12px;
+    line-height: 25px;
+  }
+
+  .infor-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-vehicle img {
+    max-width: 100%;
+  }
+  .infor-vehicle-text {
+    line-height: 21px;
+  }
+  .infor-vehicle-text-number {
+    font-size: 29px;
+  }
+  .infor-vehicle-text-text {
+    font-size: 20px;
+  }
+  .img-vehicleviolation {
+    display: inline-block;
+    position: relative;
+  }
+  .img-vehicleviolation .triangle {
+    position: absolute;
+    right: 0;
+    top: 1px;
+  }
+  .img-vehicleviolation .triangle img {
+    max-width: 100%;
+    height: 26px;
+    width: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 0px;
+    line-height: 26px;
+  }
+  .carousel-indicators [data-bs-target] {
+    margin: 0px 5px;
+    width: 10px;
+    height: 10px;
+  }
+  .phone-number {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .email-address {
+    color: #56ccf2;
+  }
+  .icon-phone {
+    width: 29px;
+    height: 29px;
+    border-radius: 50px;
+    background: linear-gradient(#f2994a, #f2c94c);
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-phone i {
+    font-size: 15px;
+    color: #ffffff;
+  }
+  .contact-text {
+    padding-right: 5px;
+  }
+  .contact-text p {
+    font-size: 21px;
+    line-height: 22px;
+  }
+  .image-qr {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-qr img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  .col-end {
+    width: 30%;
+    height: 85%;
+    /* background-color: gray; */
+    position: absolute;
+    right: 0;
+    top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .violation-block {
+    padding-bottom: 35px;
   }
 }

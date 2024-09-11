@@ -133,7 +133,7 @@ const MonitorStreamCamera = () => {
                             </div>
                         </div> */}
                         <div className='Logo-csgt d-flex align-items-center'>
-                            <div className='img-logo me-2'>
+                            <div className='img-logo'>
                                 <img src={LogoCsgt} alt='' className='mw-100' />
                             </div>
                             <h3 className='mb-0'>PHÒNG CSGT <br /> TỈNH TÂY NINH</h3>
@@ -149,10 +149,10 @@ const MonitorStreamCamera = () => {
                                             className={`violation-item ${currentVideo.id === video.id ? 'active' : ''}`}
                                             onClick={() => handleVideoSelect(video)}
                                         >
-                                            <div className='bg-img-list'>
+                                            <div className='bg-img-list flex-shrink-0'>
                                                 {/* <img src='' alt='' /> */}
                                             </div>
-                                            <div className='violation-item-end'>
+                                            <div className='violation-item-end flex-grow-1'>
                                                 <div className='d-flex justify-content-between align-items-center'>
                                                     <h5>70G1-59629</h5>
                                                     <p>12:14</p>
@@ -202,7 +202,7 @@ const MonitorStreamCamera = () => {
                     </div>
                 </div>
                 <div className='main-bottom'>
-                    <div className='row'>
+                    <div className='row align-items-center mb-3'>
                         <div className='col-sm-12 col-md-4 col-log-4'>
                             <div className='infor-vehicle-andviolation'>
                                 <div className='row text-white'>
@@ -240,7 +240,7 @@ const MonitorStreamCamera = () => {
                             </div>
 
                         </div>
-                        <div className='col-sm-12 col-md-4 col-lg-4 pe-0'>
+                        <div className='col-sm-12 col-md-4 col-lg-4'>
                             <div className='infor-law text-center'>
                                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                                     <div className="carousel-indicators pt-5">
@@ -269,10 +269,10 @@ const MonitorStreamCamera = () => {
                             </div>
 
                         </div>
-                        <div className='col-sm-12 col-md-4 col-lg-4 ps-0'>
+                        <div className='col-sm-12 col-md-4 col-lg-4'>
                             <div className='contact-phone-qr'>
                                 <div className='d-flex align-items-center justify-content-between'>
-                                    <div className='contact-text text-center'>
+                                    <div className='contact-text text-center flex-grow-1'>
                                         <div className='group-icon-phone d-flex align-items-center justify-content-center'>
                                             <div className='icon-phone d-flex align-items-center justify-content-center'>
                                                 <i className="fa-solid fa-phone"></i>
@@ -284,11 +284,11 @@ const MonitorStreamCamera = () => {
                                             <img src={ArrowVecter} alt='' />
                                         </div>
                                     </div>
-                                    <div className='image-qr'>
+                                    <div className='image-qr flex-shrink-0'>
                                         <img src={QR} alt='' />
                                     </div>
                                 </div>
-                                <div className='animate-round-dot1 text-end mt-3 mb-3'>
+                                <div className='animate-round-dot1 text-end'>
                                     <img src={ImageDot1} alt='' />
                                 </div>
                             </div>
