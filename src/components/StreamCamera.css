@@ -8,6 +8,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 .list-dot {
   height: 20px;
   margin: 10px;
@@ -21,7 +22,7 @@ body {
   background-image: url("../assets/images/Rectangle 57.png");
   background-repeat: no-repeat;
   background-position: right top;
-  background-size: 90% auto;
+  background-size: 90% 90%;
 }
 
 .main-top-header {
@@ -31,9 +32,9 @@ body {
   padding: 5px 20px 5px 0px;
 }
 .main-top-header .title {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
-  line-height: 22px;
+  line-height: 21px;
   /* background-color: red; */
 }
 .img-icon-camera {
@@ -42,9 +43,9 @@ body {
 }
 
 .time .time-text {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: bold;
 }
 .time-icon i {
   font-size: 18px;
@@ -73,10 +74,6 @@ body {
   border-radius: 2px;
 }
 
-.screen-stream {
-  padding-top: 47px;
-  position: relative;
-}
 .Logo-csgt {
   position: absolute;
   top: -20px;
@@ -86,18 +83,24 @@ body {
   width: 80px;
   height: 92px;
   object-fit: contain;
+  margin-right: 5px;
 }
 .Logo-csgt h3 {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 800;
   text-align: center;
-  line-height: 23px;
+  line-height: 24px;
   color: #f9f9f9;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.screen-stream {
+  padding-top: 47px;
+  position: relative;
 }
 
 .col-start {
-  width: 70%;
+  width: 65%;
   height: 100%;
   border-radius: 10px;
   background-clip: padding-box;
@@ -163,8 +166,8 @@ body {
 }
 
 .col-end {
-  width: 30%;
-  height: 78%;
+  width: 35%;
+  height: 76%;
   /* background-color: gray; */
   position: absolute;
   right: 0;
@@ -173,23 +176,20 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .violation-block {
-  width: 90%;
+  width: 93%;
   height: 100%;
   background-color: #2b498b;
   border-radius: 10px;
   overflow: hidden;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
-
 .violation-list {
   height: 100%;
   padding: 10px;
   overflow-y: scroll;
   position: relative;
 }
-
 /* Tùy chỉnh thanh cuộn */
 .violation-list::-webkit-scrollbar {
   width: 5px;
@@ -222,7 +222,6 @@ body {
   background-color: #3463a0;
   border: 2px solid #5acdf3;
 }
-
 .bg-img-list {
   background-image: url("../assets/images/Mask group.png");
   background-repeat: no-repeat;
@@ -234,7 +233,6 @@ body {
   object-fit: fill;
   border: 2px solid #ffffff;
 }
-
 .violation-item-end {
   margin-left: 10px;
 }
@@ -243,17 +241,20 @@ body {
   width: 100%;
 }
 .violation-item-end > div h5 {
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 0px;
   line-height: 20px;
   padding: 2px 10px 2px 10px;
   border: 1px solid #ffffff;
   border-radius: 6px;
 }
+.violation-item-end > div p {
+  font-size: 15px;
+}
 .violation-item-end p {
   /* font-size: 16px; */
   margin-bottom: 0px;
-  line-height: 19px;
+  line-height: 18px;
   font-size: clamp(12px, 2vw, 16px);
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -262,24 +263,26 @@ body {
   text-overflow: ellipsis;
   white-space: normal;
 }
-
 .description-list-violation {
   position: absolute;
   right: 0;
-  bottom: 41px;
-  width: 30%;
+  bottom: 50px;
+  width: 35%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .custom-chose {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 65%;
 }
 .custom-chose img {
   max-width: 100%;
-  height: 45px;
+  height: 43px;
+  object-fit: fill;
 }
 .chose-text {
   position: absolute;
@@ -288,16 +291,15 @@ body {
 }
 .chose-text img {
   max-width: 100%;
-  width: 45px;
-  height: 10px;
+  width: 40px;
+  height: 8px;
 }
 .chose-text span {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
 }
-
 .crossbar {
-  width: 30%;
+  width: 35%;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -320,25 +322,23 @@ body {
   height: 10px;
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 14px;
 }
 .crossbar-two img {
   max-width: 100%;
 }
-
 .main-bottom {
   margin-top: 20px;
 }
-
 .infor-law-text {
   background: linear-gradient(to right, #f2c94c, #f2994a);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   padding-left: 12px;
-  line-height: 25px;
+  line-height: 22px;
 }
 
 .infor-vehicle {
@@ -374,21 +374,21 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  line-height: 20px;
+  line-height: 18px;
 }
 .infor-vehicle-text-number {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bold;
 }
 .infor-vehicle-text-text {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .phone-number {
   background: linear-gradient(to right, #f2c94c, #f2994a);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
   text-align: center;
 }
@@ -396,23 +396,26 @@ body {
   color: #56ccf2;
 }
 .icon-phone {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border-radius: 50px;
   background: linear-gradient(#f2994a, #f2c94c);
-  margin-right: 10px;
+  margin-right: 8px;
 }
 .icon-phone i {
   font-size: 14px;
   color: #ffffff;
 }
+.contact-text {
+  margin-right: 10px;
+}
 .contact-text p {
-  font-size: 17px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 17px;
 }
 .image-qr {
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -425,7 +428,6 @@ body {
 }
 .img-vecter-arrow img {
   width: 70px;
-  margin-right: 10px;
 }
 
 .animate-round-dot {
@@ -445,21 +447,6 @@ body {
   height: 15px;
 }
 
-.dots-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 200px;
-  margin: auto;
-}
-
-.dot {
-  width: 18px;
-  height: 18px;
-  background-color: rgba(86, 204, 242, 0.2);
-  border-radius: 40%;
-  animation: pulse 1.5s infinite alternate;
-}
 .carousel-indicators {
   margin-bottom: 0px !important;
 }
@@ -497,15 +484,13 @@ body {
   }
 }
 
-/* laptop/desktop */
-@media (min-width: 992px) and (max-width: 1235px) {
+@media (min-width: 992px) and (max-width: 1052px) {
   .animate-round-dot {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 8px 0px;
   }
-
   .animate-round-dot img {
     height: 13px;
   }
@@ -516,39 +501,34 @@ body {
     width: 100%;
   }
   .Logo-csgt .img-logo {
-    margin-right: 4px;
+    margin-right: 3px;
   }
   .Logo-csgt img {
-    width: 73px;
-    height: 85px;
+    width: 75px;
+    height: 87px;
     object-fit: fill;
   }
   .Logo-csgt h3 {
-    font-size: 18px;
-    padding-bottom: 5px;
-    line-height: 19px;
+    font-size: 14px;
+    padding-bottom: 2px;
+    line-height: 17px;
   }
-
   .main-top .main-top-header {
     width: 71%;
     top: 3px;
     right: 0;
-    padding: 6px 20px 6px 0px;
-  }
-
-  .main-top-header .img-icon-camera {
-    width: 32px;
-    height: 32px;
+    padding: 5px 12px 5px 0px;
   }
   .main-top-header .title {
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: 700;
   }
   .time .time-text {
-    font-size: 13px;
+    font-size: 12px;
   }
-  .violation-list .violation-item {
-    /* display: flex;
-    align-items: center; */
+
+  .violation-block {
+    height: 96%;
   }
 
   .violation-list .violation-item {
@@ -559,55 +539,32 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     max-width: 100%;
-    width: 75px;
-    height: 75px;
+    width: 56px;
+    height: 56px;
     border-radius: 10px;
     background-color: #0e2e6e;
   }
   .violation-item-end {
     margin-left: 10px;
   }
-
   .violation-item .violation-item-end > div h5 {
-    font-size: 15px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 16px;
   }
   .violation-item .violation-item-end > div p {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 13px;
+    line-height: 15px;
   }
   .violation-item .violation-item-end p {
-    font-size: 14px;
-    line-height: 17px;
-  }
-  .custom-chose img {
-    max-width: 100%;
-    height: 35px;
-  }
-  .chose-text {
-    position: absolute;
-    line-height: 15px;
-    padding-bottom: 5px;
+    font-size: 12px;
+    line-height: 14px;
   }
   .chose-text img {
     max-width: 100%;
-    width: 32px;
-    height: 8px;
+    height: 5px;
   }
   .chose-text span {
-    font-size: 14px;
-    font-weight: 700;
-  }
-
-  .infor-law-text {
-    background: linear-gradient(to right, #f2c94c, #f2994a);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-size: 21px;
-    font-weight: bold;
-    text-align: center;
-    padding-left: 12px;
-    line-height: 25px;
+    font-size: 12px;
   }
 
   .infor-vehicle {
@@ -619,13 +576,13 @@ body {
     max-width: 100%;
   }
   .infor-vehicle-text {
-    line-height: 16px;
+    line-height: 15px;
   }
   .infor-vehicle-text-number {
-    font-size: 24px;
+    font-size: 22px;
   }
   .infor-vehicle-text-text {
-    font-size: 14px;
+    font-size: 12px;
   }
   .img-vehicleviolation {
     display: inline-block;
@@ -648,22 +605,22 @@ body {
     background: linear-gradient(to right, #f2c94c, #f2994a);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
-    padding-left: 0px;
-    line-height: 19px;
+    padding-left: 12px;
+    line-height: 18px;
   }
   .carousel-indicators [data-bs-target] {
-    margin: 0px 4px;
-    width: 7px;
-    height: 7px;
+    margin: 0px 3px;
+    width: 6px;
+    height: 6px;
   }
   .phone-number {
     background: linear-gradient(to right, #f2c94c, #f2994a);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: 23px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
   }
@@ -671,8 +628,8 @@ body {
     color: #56ccf2;
   }
   .icon-phone {
-    width: 26px;
-    height: 26px;
+    width: 25px;
+    height: 25px;
     border-radius: 50px;
     background: linear-gradient(#f2994a, #f2c94c);
     margin-right: 5px;
@@ -681,19 +638,19 @@ body {
     justify-content: center;
   }
   .icon-phone i {
-    font-size: 13px;
+    font-size: 12px;
     color: #ffffff;
   }
   .contact-text {
     padding-right: 5px;
   }
   .contact-text p {
-    font-size: 16px;
-    line-height: 17px;
+    font-size: 15px;
+    line-height: 16px;
   }
   .image-qr {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -704,9 +661,70 @@ body {
     border-radius: 5px;
     background-color: #ffffff;
   }
+
+  .description-list-violation {
+    position: absolute;
+    right: 0;
+    bottom: 41px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+  .custom-chose img {
+    max-width: 100%;
+    height: 30px;
+  }
+  .chose-text {
+    position: absolute;
+    line-height: 15px;
+    padding-bottom: 5px;
+  }
+  .chose-text img {
+    max-width: 100%;
+    width: 34px;
+    height: 8px;
+  }
+  .chose-text span {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .crossbar {
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .crossbar-one {
+    width: 80%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  .crossbar-one img {
+    max-width: 100%;
+  }
+  .crossbar-two {
+    width: 60%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .crossbar-two img {
+    max-width: 100%;
+  }
+  .contact-text p {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
-@media (min-width: 992px) and (max-width: 1175px) {
+@media (min-width: 1053px) and (max-width: 1175px) {
   .animate-round-dot {
     display: flex;
     align-items: center;
@@ -736,8 +754,12 @@ body {
     padding-bottom: 5px;
     line-height: 18px;
   }
-  .violation-block {
-    height: 99%;
+
+  .main-top .main-top-header {
+    width: 71%;
+    top: 3px;
+    right: 0;
+    padding: 5px 13px 5px 0px;
   }
   .violation-list .violation-item {
     display: flex;
@@ -767,33 +789,62 @@ body {
     font-size: 13px;
     line-height: 14px;
   }
+
   .description-list-violation {
     position: absolute;
     right: 0;
-    bottom: 41px;
-    width: 30%;
+    bottom: 43px;
+    width: 35%;
     display: flex;
     justify-content: center;
   }
-  .custom-chose {
-  }
   .custom-chose img {
     max-width: 100%;
-    height: 35px;
+    height: 30px;
   }
   .chose-text {
     position: absolute;
-    line-height: 16px;
+    line-height: 15px;
     padding-bottom: 5px;
   }
   .chose-text img {
     max-width: 100%;
-    width: 35px;
-    height: 10px;
+    width: 34px;
+    height: 8px;
   }
   .chose-text span {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
+  }
+  .crossbar {
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .crossbar-one {
+    width: 80%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  .crossbar-one img {
+    max-width: 100%;
+  }
+  .crossbar-two {
+    width: 60%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .crossbar-two img {
+    max-width: 100%;
   }
 
   .img-vehicleviolation {
@@ -934,302 +985,8 @@ body {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1052px) {
-  .animate-round-dot {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 8px 0px;
-  }
-
-  .animate-round-dot img {
-    height: 13px;
-  }
-  .animate-round-dot1 img {
-    height: 13px;
-  }
-  .Logo-csgt {
-    width: 100%;
-  }
-  .Logo-csgt .img-logo {
-    margin-right: 3px;
-  }
-  .Logo-csgt img {
-    width: 75px;
-    height: 87px;
-    object-fit: fill;
-  }
-  .Logo-csgt h3 {
-    font-size: 16px;
-    padding-bottom: 2px;
-    line-height: 17px;
-  }
-  .main-top-header .title {
-    font-size: 15px;
-    font-weight: 700;
-  }
-  .time .time-text {
-    font-size: 12px;
-  }
-
-  .violation-block {
-    height: 96%;
-  }
-
-  .violation-list .violation-item {
-    display: flex;
-    align-items: center;
-  }
-  .bg-img-list {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    max-width: 100%;
-    width: 56px;
-    height: 56px;
-    border-radius: 10px;
-    background-color: #0e2e6e;
-  }
-  .violation-item-end {
-    width: 70%;
-    margin-left: 10px;
-  }
-  .violation-item .violation-item-end > div h5 {
-    font-size: 14px;
-    line-height: 16px;
-  }
-  .violation-item .violation-item-end > div p {
-    font-size: 13px;
-    line-height: 15px;
-  }
-  .violation-item .violation-item-end p {
-    font-size: 12px;
-    line-height: 14px;
-  }
-  .chose-text img {
-    max-width: 100%;
-    height: 5px;
-  }
-  .chose-text span {
-    font-size: 12px;
-  }
-
-  .infor-vehicle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .infor-vehicle img {
-    max-width: 100%;
-  }
-  .infor-vehicle-text {
-    line-height: 15px;
-  }
-  .infor-vehicle-text-number {
-    font-size: 22px;
-  }
-  .infor-vehicle-text-text {
-    font-size: 12px;
-  }
-  .img-vehicleviolation {
-    display: inline-block;
-    position: relative;
-  }
-  .img-vehicleviolation .triangle {
-    position: absolute;
-    right: 0;
-    top: 1px;
-  }
-  .img-vehicleviolation .triangle img {
-    max-width: 100%;
-    height: 16px;
-    width: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .infor-law-text {
-    background: linear-gradient(to right, #f2c94c, #f2994a);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    padding-left: 12px;
-    line-height: 18px;
-  }
-  .carousel-indicators [data-bs-target] {
-    margin: 0px 3px;
-    width: 6px;
-    height: 6px;
-  }
-  .phone-number {
-    background: linear-gradient(to right, #f2c94c, #f2994a);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
-  }
-  .email-address {
-    color: #56ccf2;
-  }
-  .icon-phone {
-    width: 25px;
-    height: 25px;
-    border-radius: 50px;
-    background: linear-gradient(#f2994a, #f2c94c);
-    margin-right: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .icon-phone i {
-    font-size: 12px;
-    color: #ffffff;
-  }
-  .contact-text {
-    padding-right: 5px;
-  }
-  .contact-text p {
-    font-size: 15px;
-    line-height: 16px;
-  }
-  .image-qr {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .image-qr img {
-    max-width: 100%;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #ffffff;
-  }
-}
-/* tablet */
-@media (min-width: 768px) and (max-width: 991px) {
-  .Logo-csgt h3 {
-    font-size: 16px;
-    line-height: 16px;
-    padding-top: 10px;
-  }
-  .img-logo img {
-    width: 80px;
-    height: 92px;
-    object-fit: fill;
-  }
-  .main-top-header {
-    padding: 9px 15px 5px 0px;
-  }
-
-  .main-top-header .img-icon-camera {
-    width: 30px;
-    height: 30px;
-  }
-  .main-top-header .title {
-    font-size: 16px;
-  }
-  .main-top-header .time .time-text {
-    font-size: 13px;
-    line-height: 14px;
-    font-weight: 700;
-  }
-  .main-top-header .time .time-icon i {
-    font-size: 16px;
-  }
-  .chose-text img {
-    max-width: 100%;
-    height: 8px;
-  }
-  .chose-text span {
-    font-size: 14px;
-  }
-  .img-vehicleviolation {
-    display: inline-block;
-    position: relative;
-  }
-  .img-vehicleviolation .triangle {
-    position: absolute;
-    right: 0;
-    top: 1px;
-  }
-  .img-vehicleviolation .triangle img {
-    max-width: 100%;
-    height: 13px;
-    width: 11px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
-  .Logo-csgt h3 {
-    font-size: 12px;
-    line-height: 12px;
-    padding-top: 20px;
-  }
-  .main-top-header {
-    padding: 9px 15px 5px 0px;
-    display: flex;
-    align-items: center;
-  }
-  .main-top-header .img-icon-camera {
-    width: 20px;
-    height: 20px;
-  }
-  .main-top-header .title {
-    font-size: 14px;
-  }
-  .main-top-header .time .time-text {
-    font-size: 11px;
-    line-height: 12px;
-    font-weight: 700;
-  }
-  .main-top-header .time .time-icon i {
-    font-size: 14px;
-  }
-  .infor-vehicle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  .infor-vehicle img {
-    max-width: 100%;
-  }
-  .infor-vehicle-text-number {
-    font-size: 35px;
-  }
-  .infor-vehicle-text-text {
-    font-size: 26px;
-  }
-  .contact-text p {
-    font-size: 20px;
-  }
-  .img-vehicleviolation {
-    display: inline-block;
-    position: relative;
-  }
-  .img-vehicleviolation .triangle {
-    position: absolute;
-    right: 0;
-    top: 1px;
-  }
-  .img-vehicleviolation .triangle img {
-    max-width: 100%;
-    height: 30px;
-    width: 27px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 /* laptop/desktop */
-@media (min-width: 1235px) and (max-width: 1279px) {
+@media (min-width: 1175px) and (max-width: 1235px) {
   .animate-round-dot {
     display: flex;
     align-items: center;
@@ -1264,7 +1021,7 @@ body {
     width: 71%;
     top: 3px;
     right: 0;
-    padding: 6px 20px 6px 0px;
+    padding: 6px 15px 6px 0px;
   }
 
   .main-top-header .img-icon-camera {
@@ -1311,6 +1068,15 @@ body {
     font-size: 14px;
     line-height: 17px;
   }
+
+  .description-list-violation {
+    position: absolute;
+    right: 0;
+    bottom: 46px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
   .custom-chose img {
     max-width: 100%;
     height: 35px;
@@ -1328,6 +1094,284 @@ body {
   .chose-text span {
     font-size: 14px;
     font-weight: 700;
+  }
+  .crossbar {
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .crossbar-one {
+    width: 80%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  .crossbar-one img {
+    max-width: 100%;
+  }
+  .crossbar-two {
+    width: 60%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .crossbar-two img {
+    max-width: 100%;
+  }
+
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 12px;
+    line-height: 25px;
+  }
+
+  .infor-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-vehicle img {
+    max-width: 100%;
+  }
+  .infor-vehicle-text {
+    line-height: 16px;
+  }
+  .infor-vehicle-text-number {
+    font-size: 24px;
+  }
+  .infor-vehicle-text-text {
+    font-size: 14px;
+  }
+  .img-vehicleviolation {
+    display: inline-block;
+    position: relative;
+  }
+  .img-vehicleviolation .triangle {
+    position: absolute;
+    right: 0;
+    top: 1px;
+  }
+  .img-vehicleviolation .triangle img {
+    max-width: 100%;
+    height: 16px;
+    width: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor-law-text {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 0px;
+    line-height: 19px;
+  }
+  .carousel-indicators [data-bs-target] {
+    margin: 0px 4px;
+    width: 7px;
+    height: 7px;
+  }
+  .phone-number {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .email-address {
+    color: #56ccf2;
+  }
+  .icon-phone {
+    width: 26px;
+    height: 26px;
+    border-radius: 50px;
+    background: linear-gradient(#f2994a, #f2c94c);
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-phone i {
+    font-size: 13px;
+    color: #ffffff;
+  }
+  .contact-text {
+    padding-right: 5px;
+  }
+  .contact-text p {
+    font-size: 16px;
+    line-height: 17px;
+  }
+  .image-qr {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-qr img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+}
+
+/* laptop/desktop */
+@media (min-width: 1235px) and (max-width: 1279px) {
+  .animate-round-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0px;
+  }
+
+  .animate-round-dot img {
+    height: 13px;
+  }
+  .animate-round-dot1 img {
+    height: 13px;
+  }
+  .Logo-csgt {
+    width: 100%;
+  }
+  .Logo-csgt .img-logo {
+    margin-right: 4px;
+  }
+  .Logo-csgt img {
+    width: 73px;
+    height: 85px;
+    object-fit: fill;
+  }
+  .Logo-csgt h3 {
+    font-size: 18px;
+    padding-bottom: 5px;
+    line-height: 19px;
+  }
+
+  .main-top .main-top-header {
+    width: 71%;
+    top: 3px;
+    right: 0;
+    padding: 6px 16px 6px 0px;
+  }
+
+  .main-top-header .img-icon-camera {
+    width: 32px;
+    height: 32px;
+  }
+  .main-top-header .title {
+    font-size: 17px;
+  }
+  .time .time-text {
+    font-size: 13px;
+  }
+  .violation-list .violation-item {
+    /* display: flex;
+    align-items: center; */
+  }
+
+  .violation-list .violation-item {
+    display: flex;
+    align-items: center;
+  }
+  .bg-img-list {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: #0e2e6e;
+  }
+  .violation-item-end {
+    margin-left: 10px;
+  }
+
+  .violation-item .violation-item-end > div h5 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .violation-item .violation-item-end > div p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .violation-item .violation-item-end p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .description-list-violation {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+  .custom-chose img {
+    max-width: 100%;
+    height: 36px;
+  }
+  .chose-text {
+    position: absolute;
+    line-height: 15px;
+    padding-bottom: 5px;
+  }
+  .chose-text img {
+    max-width: 100%;
+    width: 32px;
+    height: 8px;
+  }
+  .chose-text span {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .crossbar {
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .crossbar-one {
+    width: 80%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .crossbar-one img {
+    max-width: 100%;
+  }
+  .crossbar-two {
+    width: 60%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .crossbar-two img {
+    max-width: 100%;
   }
 
   .infor-law-text {
@@ -1472,7 +1516,7 @@ body {
     width: 71%;
     top: 3px;
     right: 0;
-    padding: 6px 20px 6px 0px;
+    padding: 6px 17px 6px 0px;
   }
 
   .main-top-header .img-icon-camera {
@@ -1484,6 +1528,25 @@ body {
   }
   .time .time-text {
     font-size: 14px;
+  }
+  .col-end {
+    width: 35%;
+    height: 77% !important;
+    /* background-color: gray; */
+    position: absolute;
+    right: 0;
+    top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .violation-block {
+    width: 93%;
+    height: 100%;
+    background-color: #2b498b;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 30px;
   }
   .violation-list .violation-item {
     /* display: flex;
@@ -1519,9 +1582,17 @@ body {
     font-size: 15px;
     line-height: 18px;
   }
+  .description-list-violation {
+    position: absolute;
+    right: 0;
+    bottom: 54px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
   .custom-chose img {
     max-width: 100%;
-    height: 35px;
+    height: 38px;
   }
   .chose-text {
     position: absolute;
@@ -1530,12 +1601,42 @@ body {
   }
   .chose-text img {
     max-width: 100%;
-    width: 32px;
+    width: 34px;
     height: 8px;
   }
   .chose-text span {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
+  }
+  .crossbar {
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .crossbar-one {
+    width: 80%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+  }
+  .crossbar-one img {
+    max-width: 100%;
+  }
+  .crossbar-two {
+    width: 60%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .crossbar-two img {
+    max-width: 100%;
   }
 
   .infor-law-text {
@@ -1644,8 +1745,8 @@ body {
     background-color: #ffffff;
   }
   .col-end {
-    width: 30%;
-    height: 80%;
+    width: 35%;
+    height: 70%;
     /* background-color: gray; */
     position: absolute;
     right: 0;
@@ -1704,6 +1805,26 @@ body {
   .time .time-text {
     font-size: 14px;
   }
+
+  .col-end {
+    width: 35%;
+    height: 78% !important;
+    /* background-color: gray; */
+    position: absolute;
+    right: 0;
+    top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .violation-block {
+    width: 93%;
+    height: 100%;
+    background-color: #2b498b;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 30px;
+  }
   .violation-list .violation-item {
     /* display: flex;
     align-items: center; */
@@ -1738,9 +1859,17 @@ body {
     font-size: 15px;
     line-height: 18px;
   }
+  .description-list-violation {
+    position: absolute;
+    right: 0;
+    bottom: 59px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
   .custom-chose img {
     max-width: 100%;
-    height: 35px;
+    height: 40px;
   }
   .chose-text {
     position: absolute;
@@ -1753,8 +1882,38 @@ body {
     height: 8px;
   }
   .chose-text span {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
+  }
+  .crossbar {
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .crossbar-one {
+    width: 80%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 14px;
+  }
+  .crossbar-one img {
+    max-width: 100%;
+  }
+  .crossbar-two {
+    width: 60%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .crossbar-two img {
+    max-width: 100%;
   }
 
   .infor-law-text {
@@ -1863,7 +2022,7 @@ body {
     background-color: #ffffff;
   }
   .col-end {
-    width: 30%;
+    width: 35%;
     height: 82%;
     /* background-color: gray; */
     position: absolute;
@@ -1910,7 +2069,7 @@ body {
     width: 71%;
     top: 3px;
     right: 0;
-    padding: 6px 24px 6px 0px;
+    padding: 6px 20px 6px 0px;
   }
 
   .main-top-header .img-icon-camera {
@@ -1922,6 +2081,25 @@ body {
   }
   .time .time-text {
     font-size: 15px;
+  }
+  .col-end {
+    width: 35%;
+    height: 78% !important;
+    /* background-color: gray; */
+    position: absolute;
+    right: 0;
+    top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .violation-block {
+    width: 93%;
+    height: 100%;
+    background-color: #2b498b;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 30px;
   }
   .violation-list .violation-item {
     /* display: flex;
@@ -1957,40 +2135,61 @@ body {
     font-size: 16px;
     line-height: 18px;
   }
-
-
   .description-list-violation {
     position: absolute;
     right: 0;
-    bottom: 39px;
-    width: 30%;
+    bottom: 65px;
+    width: 35%;
     display: flex;
     justify-content: center;
   }
-  .custom-chose {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }  
-
   .custom-chose img {
     max-width: 100%;
-    height: 42px;
+    height: 45px;
   }
   .chose-text {
     position: absolute;
-    line-height: 15px;
+    line-height: 17px;
     padding-bottom: 5px;
   }
   .chose-text img {
     max-width: 100%;
-    width: 35px;
-    height: 8px;
+    width: 34px;
+    height: 9px;
   }
   .chose-text span {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 700;
+  }
+  .crossbar {
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .crossbar-one {
+    width: 80%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 18px;
+  }
+  .crossbar-one img {
+    max-width: 100%;
+  }
+  .crossbar-two {
+    width: 60%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .crossbar-two img {
+    max-width: 100%;
   }
 
   .infor-law-text {
@@ -2099,7 +2298,7 @@ body {
     background-color: #ffffff;
   }
   .col-end {
-    width: 30%;
+    width: 35%;
     height: 83%;
     /* background-color: gray; */
     position: absolute;
@@ -2150,7 +2349,7 @@ body {
     width: 71%;
     top: 3px;
     right: 0;
-    padding: 6px 27px 6px 0px;
+    padding: 6px 22px 6px 0px;
   }
 
   .main-top-header .img-icon-camera {
@@ -2162,6 +2361,25 @@ body {
   }
   .time .time-text {
     font-size: 17px;
+  }
+  .col-end {
+    width: 35%;
+    height: 78% !important;
+    /* background-color: gray; */
+    position: absolute;
+    right: 0;
+    top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .violation-block {
+    width: 93%;
+    height: 100%;
+    background-color: #2b498b;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 30px;
   }
   .violation-list .violation-item {
     /* display: flex;
@@ -2198,39 +2416,61 @@ body {
     line-height: 20px;
   }
 
-
   .description-list-violation {
     position: absolute;
     right: 0;
-    bottom: 39px;
-    width: 30%;
+    bottom: 69px;
+    width: 35%;
     display: flex;
     justify-content: center;
   }
-  .custom-chose {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }  
-
   .custom-chose img {
     max-width: 100%;
-    height: 42px;
+    height: 48px;
   }
   .chose-text {
     position: absolute;
-    line-height: 17px;
+    line-height: 18px;
     padding-bottom: 5px;
   }
   .chose-text img {
     max-width: 100%;
-    width: 35px;
-    height: 8px;
+    width: 40px;
+    height: 10px;
   }
   .chose-text span {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
+  }
+  .crossbar {
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .crossbar-one {
+    width: 80%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 22px;
+  }
+  .crossbar-one img {
+    max-width: 100%;
+  }
+  .crossbar-two {
+    width: 60%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .crossbar-two img {
+    max-width: 100%;
   }
 
   .infor-law-text {
@@ -2339,7 +2579,7 @@ body {
     background-color: #ffffff;
   }
   .col-end {
-    width: 30%;
+    width: 35%;
     height: 85%;
     /* background-color: gray; */
     position: absolute;
@@ -2390,7 +2630,7 @@ body {
     width: 71%;
     top: 3px;
     right: 0;
-    padding: 6px 29px 6px 0px;
+    padding: 6px 25px 6px 0px;
   }
 
   .main-top-header .img-icon-camera {
@@ -2402,6 +2642,25 @@ body {
   }
   .time .time-text {
     font-size: 17px;
+  }
+  .col-end {
+    width: 35%;
+    height: 78% !important;
+    /* background-color: gray; */
+    position: absolute;
+    right: 0;
+    top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .violation-block {
+    width: 93%;
+    height: 100%;
+    background-color: #2b498b;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 50px;
   }
   .violation-list .violation-item {
     /* display: flex;
@@ -2438,39 +2697,61 @@ body {
     line-height: 20px;
   }
 
-
   .description-list-violation {
     position: absolute;
     right: 0;
-    bottom: 39px;
-    width: 30%;
+    bottom: 75px;
+    width: 35%;
     display: flex;
     justify-content: center;
   }
-  .custom-chose {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }  
-
   .custom-chose img {
     max-width: 100%;
-    height: 42px;
+    height: 60px;
   }
   .chose-text {
     position: absolute;
-    line-height: 17px;
+    line-height: 20px;
     padding-bottom: 5px;
   }
   .chose-text img {
     max-width: 100%;
-    width: 35px;
-    height: 8px;
+    width: 55px;
+    height: 10px;
   }
   .chose-text span {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 700;
+  }
+  .crossbar {
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .crossbar-one {
+    width: 80%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+  }
+  .crossbar-one img {
+    max-width: 100%;
+  }
+  .crossbar-two {
+    width: 60%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .crossbar-two img {
+    max-width: 100%;
   }
 
   .infor-law-text {
@@ -2579,7 +2860,7 @@ body {
     background-color: #ffffff;
   }
   .col-end {
-    width: 30%;
+    width: 35%;
     height: 85%;
     /* background-color: gray; */
     position: absolute;

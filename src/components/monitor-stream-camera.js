@@ -100,7 +100,7 @@ const MonitorStreamCamera = () => {
 
 
                     <div className='screen-stream d-flex '>
-                        <div className='col-start flex-shirk-0'>
+                        <div className='col-start '>
                             <div className='media-placeholder'>
                                 <div className='bg-img'>
                                     <div className='video-wrapper'>
@@ -202,7 +202,7 @@ const MonitorStreamCamera = () => {
                     </div>
                 </div>
                 <div className='main-bottom'>
-                    <div className='row align-items-center mb-3'>
+                    <div className='row d-flex align-items-center mb-3'>
                         <div className='col-sm-12 col-md-4 col-log-4'>
                             <div className='infor-vehicle-andviolation'>
                                 <div className='row text-white'>
@@ -297,7 +297,13 @@ const MonitorStreamCamera = () => {
                     </div>
                 </div>
             </div>
+
+
+
+            
+
         </div>
+        
     )
 }
 
